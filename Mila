@@ -1,0 +1,35 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+double myexp(double  x){
+    double y;
+    y=exp(x);
+    
+    return y;
+}
+
+
+int main(void){
+    double x,y,a ;
+//    cout <<"Enter x\n from -5 to 5\n";
+//    cin>>x;
+//    cout <<"Enter y\n";
+//    cin>>y;
+    a=5;
+    for(double x=0;x<=a;x+=0.1){
+        if (myexp(x)!=myexp(-x))
+           break;
+         cout <<"even"; //четная
+         
+    }
+    if(x<=a){    //Проверка на нечетность
+        for(double x=0;x<=a;x+=0.1){
+        }
+        
+    }
+    else
+         cout <<"even"; //четная
+    
+
+    return 0 ;
+}
