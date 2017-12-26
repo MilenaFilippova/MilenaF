@@ -1,4 +1,5 @@
 //високосный год
+//обычный 365 дней, а високосный — 366 дней. 
 #include <iostream>
 #include <math.h>
 using namespace std;
