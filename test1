@@ -1,0 +1,25 @@
+//високосный год
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main(void)
+{int year;
+cout <<"Enter year"<<endl;
+cin>>year;
+    if ( (year>0) && (year<=30000)  )
+    {
+	    	if  ( ((year%4==0) && (year%100!=0)) || (year%400==0) )
+		    { 
+			    cout<<"This year is a leap year in it 366 days ";         //Этот год высокосный в нем 366 дней 
+		    }
+		    else 
+		    {
+			    cout<<"This year is not leached in it for 365 days";        //Этот год невисокосный в нем 365 дней
+		    }
+	  }	
+	  else 
+	  {
+        cout<<"Data entered incorrectly \n";
+	  }
+  return 0 ;
+}
