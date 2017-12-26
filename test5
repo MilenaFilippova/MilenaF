@@ -1,0 +1,29 @@
+//5.	Рельеф. 8б. не доделала 
+//В массиве H(n) хранятся значения высот некоторого профиля местности (ее вертикального сечения) 
+//с постоянным шагом по горизонтали. Найти области (номера точек измерения высоты), невидимые для наблюдателя, 
+//находящегося в точке h1.
+
+#include <iostream>
+#include <math.h>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+int main(void)
+{   
+	int const n=6;
+	int H[n];
+	int h=0,h1;
+	cout<<"enter h1"<<endl;
+	for(int i=0; i<n; i++)
+    	{ 
+		    H[i]=min+rand()%(max-min+1) ;
+	    }
+	cin>>h1>>h;
+	for(int i=0; i<n; i+h1)
+    { 
+        if (H[i]>h1)
+        cout <<H[i]<<"  ";
+    }
+	
+  return 0;
+}
